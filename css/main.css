@@ -1,0 +1,304 @@
+:root{
+    --vermelho:#E50914;
+    --preta:#141414;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+/*elementos base*/
+body{
+   background: var(--preta);
+   font-family: 'Arial', Times, serif;
+   color:white;
+}
+
+
+header .container{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo{
+    margin-left: 15px;
+    color: var(--vermelho);
+    font-family: 'Arial Black', Times;
+    font-size:40px;
+}
+
+header nav a{
+    text-decoration:none;
+    color:#AAA;
+    margin-right: 10px;
+}
+
+
+header nav a:hover{
+    color:#fff;
+}
+
+/*filme principal*/
+.container{
+    margin-left: 20px;
+}
+
+.capa-principal{
+    font-size:16px;
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('../img/prison_break_02.jpg');
+    height:500px;
+    background-size:cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.capa-principal .descricao{
+    margin-top: 10px;
+    margin-bottom: 40px;
+    text-align: justify;
+}
+
+.capa-principal .titulo{
+    margin-top: 15%;
+    font-size: 40px;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+}
+
+.botao{
+    background-color: rgba(0,0,0,.50);
+    border:none;
+    color: white;
+    padding:15px 30px;
+    margin-right: 15px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: .3s ease all;
+    text-decoration: none;
+}
+
+.botao:hover{
+    background-color:white;
+    color:black;
+}
+
+.botao i{
+    margin-right: 8px;
+}
+
+.capa-principal .container{
+    width: 70%;
+}
+
+.box-poster{
+    height: 100%;
+    width: 1000%;
+    display: block;
+    cursor: pointer;
+}
+
+.carrosel-filmes{
+    margin-top:5px;
+}
+
+.texto-sessao{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-left: 20px;
+    padding-bottom: 5px;
+}
+
+/*CSS pagina de informações*/
+.poster-principal{
+    font-size:16px;
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('../img/prison_break_01.jpg');
+    height:600px;
+    background-size:cover;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.container-poster{
+    display: flex;
+    justify-content: center;
+    width: 30%;
+    height: 70%;
+    margin-top: 100px;
+}
+
+.container-poster img{
+    width: 270px;
+    height: 420px;
+    border-radius: 2%;
+}
+
+.detalhes-poster{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 70%;
+    margin-top: 100px;
+    margin-right: 10px;
+    background:linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%); 
+    padding: 15px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.detalhes-poster p{
+    font: 5px;
+}
+
+.detalhes-poster h1{
+    font-size: 25px;
+    margin-top: 3%;
+}
+
+.detalhes{
+    padding-top: 5px;
+    font-size: 13px;
+}
+
+.link-detalhes{
+    text-decoration: none;
+    color: white;
+}
+
+.link-detalhes:hover{
+    color:wheat;
+}
+
+.cor-itens{
+    color: yellow;
+}
+
+.sinopse{
+    text-align: justify;
+    padding-top: 35px;
+    font-size: 15px;
+    width: 50%;
+    padding-bottom: 55px;
+}
+
+.texto-sessao{
+    font-size: 25px;
+}
+
+.tamanho-imagem img{
+    width: 150px;
+    height: 370px;
+}
+
+.font-elenco{
+    text-align: center;
+    margin-top: 5px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/*CSS - Comentarios*/
+.container-comentarios{
+   display: flex;
+   justify-content: center;
+   margin-top: 5px;
+}
+.comentarios{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+
+.comentarios textarea{
+    height: 150px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background:linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%); 
+    font-size: 16px;
+    resize: none;
+    color: white;
+    margin-left: 15px;
+    margin-right: 5px;
+}
+
+.comentarios h2{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-bottom: 25px;
+    margin-left: 15px;
+}
+
+.botoes-comentarios{
+    margin-left:15px;
+    margin-top: 5px;
+}
+
+.botao-comentario{
+    background-color: rgba(0,0,0,.50);
+    border:none;
+    color: white;
+    padding:15px 30px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: .3s ease all;
+    text-decoration: none;
+    width: 30%;
+}
+
+.botao-comentario:hover{
+    background-color:white;
+    color:black;
+}
+
+.botao-comentario i{
+    margin-right: 8px;
+}
+
+.opiniao{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    padding-left: 15px;
+}
+
+.opiniao h2{
+    font-size: 28px;
+}
+
+.opiniao h5, h6{
+    font-size: 15px;
+    padding-top: 5px;
+    padding-bottom: 15px;
+}
+
+.opiniao p{
+    padding-right: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
