@@ -14,3 +14,7 @@ $('.owl-carousel').owlCarousel({
         }
     }
 })
+
+function telaAssitir(){
+    alert("Desculpe! Essa página está em fase de desenvolvimento.");
+}
